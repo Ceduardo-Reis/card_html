@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Aniversariantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Adicionar Aniversariante</h2>
+            <form id="birthdayForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="birthday">Data de Nascimento:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <label for="sector">Setor:</label>
+                <input type="text" id="sector" name="sector" required>
+                <label for="photo">Foto:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        <div id="cardsContainer">
+            <!-- Cards de aniversariantes serão adicionados aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
